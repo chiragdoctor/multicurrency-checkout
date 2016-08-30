@@ -1,0 +1,27 @@
+<div class="products">
+	<div class="row">
+		PRODUCTS
+	</div>
+	<div class="row">
+		<ul class="list-unstyled" ng-repeat="item in itemList.items">
+		 	<li> 
+		 		<div class="row">
+		 			<div class="col-sm-4">
+		 				<img ng-src="{{item.image_url}}" alt="" class="item-img">
+		 			</div>
+		 			<div class="col-sm-4">
+							<div class="item-name">{{ item.name }}</div>
+							<div class="item-price">
+								<b>
+									£{{ item.price }}		
+								</b>
+							</div>
+		 			</div>
+		 			<div class="col-sm-4 item-add">
+		 				<button ng-click="itemList.addItem(item)"> Add </button>
+		 			</div>		
+		 		</div>
+		 	</li>
+		</ul>		
+	</div>
+</div>
