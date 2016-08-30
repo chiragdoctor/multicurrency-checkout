@@ -20,6 +20,7 @@ module.exports = function(ngModule) {
         $scope.items = items;
         
         $scope.addItem = function(item) {
+          console.log('addItem', item)
           $rootScope.$broadcast("ADD_ITEM", item);
         }
       }
