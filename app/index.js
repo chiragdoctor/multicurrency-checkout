@@ -9,4 +9,6 @@ var ngModule =  angular.module('basketApp', []);
 require('./services')(ngModule);
 require('./directives')(ngModule);
 
+require('./main.less');
+
 
