@@ -1,29 +1,31 @@
 <div class="col-sm-12">	
-<div class="row products">
+<div class="products">
 
-	<div class="row text-center">
+	<div class="text-center">
 		
 			<div class="row product-heading">
-				<div class="col-sm-2"><b>Product</b></div>
-				<div class="col-sm-2"><b> Price </b> </div>
-				<div class="col-sm-2"></div>
+				<div class="col-sm-3"><b></b></div>
+				<div class="col-sm-3"><b>Product</b></div>
+				<div class="col-sm-3"><b> Price </b> </div>
+				<div class="col-sm-3"></div>
 			</div>
-			<ul class="list-unstyled items" ng-repeat="item in items">
+			<ul class="list-unstyled" ng-repeat="item in items">
 			 	<li> 
-			 		<div class="row ">
-			 			<div class="col-sm-2">
+			 		<div class="row item">
+			 			<div class="col-sm-3">
 			 				<img ng-src="{{item.image_url}}" alt="{{item.name}}" class="img-thumbnail">
+			 			</div>
+			 			<div class="col-sm-3">
 			 				<div class="item-name">{{ item.name }}</div>
 			 			</div>
-			 			<div class="col-sm-2">
-								
+			 			<div class="col-sm-3">
 								<div class="item-price">
 									<b>
 										£{{ item.price }}		
 									</b>
 								</div>
 			 			</div>
-			 			<div class="col-sm-2 glyphicon glyphicon-plus" ng-click="addItem(item)"></div>		
+			 			<div class="col-sm-3 item-add glyphicon glyphicon-plus" ng-click="addItem(item)"></div>		
 			 		</div>
 			 	</li>
 			</ul>			
