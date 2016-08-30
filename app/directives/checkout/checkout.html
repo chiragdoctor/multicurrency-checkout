@@ -1,17 +1,23 @@
-<div class="checkout" ng-show={{showTotalAmount}}>
-	<div class="row">		
-			<div class="col-sml-4"></div>
-			<div class="col-sml-4"></div>
-			<div class="col-sm-4">
-				<b>TOTAL COST : </b>
-				<select name="currencySelect" id="currencySelect" ng-model="data.currency"
-				ng-change="selectedCurency(data.currency)">
-      				<option 
-      					ng-selected="{{ value.id == data.currency}}"
-      					ng-repeat="option in data.availableCurrencies"
-      					value="{{option.id}}">{{option.name}}</option>
-    			</select>
-				<b> {{amount}} </b>
-			</div>
+<div class="row checkout">
+	CHECKOUT 
+</div>
+<div class="col-sm-0 checkout-content" ng-show={{showTotalAmount}}>
+	<div class="row total-cost">		
+		<b>TOTAL COST </b>	
+	</div>
+	
+	<div class="row dd-currency">
+		Select Currency : 
+		<select name="currencySelect" id="currencySelect" ng-model="data.currency"
+		ng-change="selectedCurency(data.currency)">
+			<option 
+				ng-selected="{{ value.id == data.currency}}"
+				ng-repeat="option in data.availableCurrencies"
+				value="{{option.id}}">{{option.name}}</option>
+		</select>	
+	</div>	
+	<div class="row amount">
+		<b> {{amount}} </b>		
 	</div>
 </div>
+	

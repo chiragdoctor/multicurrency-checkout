@@ -1,36 +1,22 @@
-<div class="basket">
-	<div class="row">
-		<p>Basket</p>  
+	<div class="row basket">
+		BASKET 
 	</div>
-	<div class="row text-center">
-			<div class="col-sm-12">
-							<div class="row basket-heading">
-				<div class="col-sm-2"><b>Product</b></div>
-				<div class="col-sm-2"><b> Price </b> </div>
-				<div class="col-sm-2"></div>
-			</div>
-		</div>
-		<div class="col-sm-12">
-			<ul class="list-unstyled basket-items" ng-repeat="item in items track by $index">
-		 	<li> 
-		 		<div class="row">
+	<div class="col-sm-0 basket-contents">
+		<ul class="list-unstyled basket-items" ng-repeat="item in items track by $index">
+		 		<li class="row"> 
 		 			<div class="col-sm-4">
 							<div class="item-name">{{ item.name }}</div>
-							<div class="item-price">{{ item.price }}</div>
+		 			</div>
+		 			<div class="col-sm-4">
+						<div class="item-price">{{ item.price }}</div>
 		 			</div>
 		 			<div class="col-sm-4 item-remove">
-		 				<button ng-click="removeItem(item)"> Remove </button>
-		 			</div>		
-		 		</div>
-		 	</li>
-		</ul>
-		</div>
-	</div>
-
-	</div>
-	<div class="row">
-		<div class="col-sm-2">
-			<button ng-click="checkout(items)" > Checkout </button>
-		</div>
-	</div>
+		 				<div class="glyphicon glyphicon-remove" ng-click="removeItem(item)"> </div> 
+		 			</div>		 			
+		 		</li>
+			</ul>
+	</div>	
+	<div class="row col-sm-0">
+		<button type="button" ng-click="checkout(items)" class="btn btn-success btn-lg btn-block checkout-btn">ORDER</button>
+	</div>		
 </div>

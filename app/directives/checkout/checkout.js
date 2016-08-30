@@ -7,7 +7,7 @@ module.exports = function(ngModule) {
   var conversion = require('../../services/conversion')();
 
   ngModule.directive('checkout', function() {
-  	// require('./checkout.less');
+  	require('./checkout.less');
   	
     return {
       restrict: 'E',
