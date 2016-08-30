@@ -17,9 +17,9 @@ module.exports = function(ngModule) {
       controllerAs: 'itemList',
       controller: function($scope, $rootScope) {
         var itemList = this;
-        itemList.items = items;
+        $scope.items = items;
         
-        itemList.addItem = function(item) {
+        $scope.addItem = function(item) {
           $rootScope.$broadcast("ADD_ITEM", item);
         }
       }

@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.5.8",
+    "chai-spies": "^0.7.1",
     "css-loader": "^0.24.0",
     "karma": "^1.2.0",
     "karma-chai": "^0.1.0",
