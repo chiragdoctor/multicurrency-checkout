@@ -1,0 +1,23 @@
+{
+  "name": "Price Basket",
+  "authors": [
+    "chiragdoctor <chirag.doctor@gmail.com>"
+  ],
+  "description": "This app will calculate the price of the basket in multiple currnencies.",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7"
+  }
+}
