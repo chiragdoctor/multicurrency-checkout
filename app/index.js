@@ -5,9 +5,8 @@ if (ON_TEST) {
 }
 
 var ngModule =  angular.module('basketApp', []);
-require('./services')(ngModule);
 
-require('./controllers')(ngModule);
+require('./services')(ngModule);
 require('./directives')(ngModule);
 
 
