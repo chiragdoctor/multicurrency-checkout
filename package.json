@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "NODE_ENV=test karma start",
-    "start": "node node_modules/.bin/webpack-dev-server --content-base app"
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "prebuild": "mkdir dist && mkdir dist/public && mkdir dist/public/img && cp -r app/public/img dist/public/ && cp -r app/bower_components dist/",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
   "author": "Chirag Doctor",
   "license": "ISC",
