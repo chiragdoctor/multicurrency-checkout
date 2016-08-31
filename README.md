@@ -17,7 +17,7 @@ rate and total amount of the basket.
 * This will start the app and then simply go to [http://localhost:8080/](http://localhost:8080/) you will be able to buy items.
 
 # Run tests
-``` npm run start ```
+``` npm run test ```
 
 #Assumption
 * As we are no usig the paid version of the http://jsonrates.com, so the souce currency is always USD. Fist we need to convert 
