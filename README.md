@@ -33,3 +33,17 @@ available quotes to GBP based quotes. Formula used is
 ``` USDQuote = (USDQuote /  GBPQuote) ```
 * We will apply this formula on the retrived quotes. 
 
+# Production
+* To run the code  on production we need to copy the assets into dist folder. This task is automated with command
+
+  ``` npm run build ```
+  
+* To view this on localhost or browser using a server, we need to install 
+  
+  ``` npm install http-server -g ```
+
+* Once installed we can run the server using the dist folder and then go to http://localhost:8080/ 
+
+``` http-server dist ```
+
+
