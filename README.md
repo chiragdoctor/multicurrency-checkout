@@ -13,7 +13,12 @@ removing items from the basket. checkout is responsible to get the latest exchan
 rate and total amount of the basket.
 
 # Start PAY-APP
-``` npm install ````
+
+* Make sure we are using 
+
+```node version >= 0.12.0 ```
+
+``` npm install ```
 ``` bower install ```
 ``` npm run start ```
 * This will start the app and then simply go to [http://localhost:8080/](http://localhost:8080/) you will be able to buy items.
